@@ -4,7 +4,7 @@ LICENSE
 MANIFEST
 README
 README.euc
-ruby-shadow.gemspec
+chef-ruby-shadow.gemspec
 pwd/shadow.c
 pwd/depend
 shadow/shadow.c
