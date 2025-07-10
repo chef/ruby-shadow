@@ -16,9 +16,9 @@ Gem::Specification.new do |spec|
     spec.files << file.chomp
   end
   spec.homepage              = 'https://github.com/apalmblad/ruby-shadow'
-  spec.name                  = 'ruby-shadow'
-  spec.required_ruby_version = ['>= 1.8']
+  spec.name                  = 'chef-ruby-shadow'
+  spec.required_ruby_version = ['>= 3.0']
   spec.summary               = '*nix Shadow Password Module'
-  spec.version               = '2.5.1'
+  spec.version               = '3.0.0'
   spec.license  = "Unlicense"
 end
