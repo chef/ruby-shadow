@@ -15,12 +15,7 @@
 #include "rubyio.h"
 #endif
 
-#ifdef RUBY19
 #define file_ptr(x) rb_io_stdio_file(x)
-#else
-#define file_ptr(x) (x)->f
-#endif
-
 #define NUM_FIELDS 10
 
 static VALUE rb_mShadow;

@@ -23,11 +23,7 @@
 #include "rubyio.h"
 #endif
 
-#ifdef RUBY19
 #define file_ptr(x) (x)->stdio_file
-#else
-#define file_ptr(x) (x)->f
-#endif
 
 static VALUE rb_mShadow;
 static VALUE rb_mPasswd;

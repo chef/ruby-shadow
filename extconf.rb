@@ -7,13 +7,6 @@
 require 'mkmf'
 require 'rbconfig'
 
-$CFLAGS = case RUBY_VERSION
-          when /^1\.9/; '-DRUBY19'
-          when /^2\./; '-DRUBY19'
-          when /^3\./; '-DRUBY19'
-          else; ''
-          end
-
 implementation = case RbConfig::CONFIG['host_os']
                  when /linux/i; 'shadow'
                  when /sunos|solaris/i; 'shadow'
@@ -42,7 +35,7 @@ when 'shadow'
 
   if ok
     if !have_func("sgetspent")
-      $CFLAGS += ' -DSOLARIS'
+      $CFLAGS = '-DSOLARIS'
     end
   end
 when 'pwd'
